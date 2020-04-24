@@ -1,0 +1,12 @@
+.btn {
+  display: flex;
+  background-color: green;
+
+  img {
+    width: 24px;
+  }
+
+  &::before {
+    content: "+";
+  }
+}

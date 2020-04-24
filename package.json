@@ -1,0 +1,24 @@
+{
+  "name": "parcelTypescriptReactSass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open --no-hmr"
+  },
+  "keywords": [],
+  "author": "Shperung",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^2.0.0",
+    "sass": "^1.26.5"
+  }
+}
