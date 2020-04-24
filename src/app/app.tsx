@@ -9,7 +9,7 @@ import "./app.scss";
 const App = () => {
   return (
     <h1>
-      Parcel + Typescript + React + SASS
+      Parcel + Typescript + React + SASS + CSS Modules
       <Button cancel> App2 </Button>
     </h1>
   );
