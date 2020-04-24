@@ -1,7 +1,7 @@
 import * as React from "react";
 
 // components
-import Button from "../button/button";
+import Button from "../components/button/button";
 
 // styles
 import "./app.scss";
