@@ -1,4 +1,6 @@
 import Cookies from 'js-cookie';
+// для симулятора ios + web http://localhost:3012
+// для емулятора android http://10.0.2.2:3012
 
 const fetchPath =
   process.env.NODE_ENV === 'production'
