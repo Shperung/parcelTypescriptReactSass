@@ -8,6 +8,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "packager": "react-native start --reset-cache",
+    "create-apk": "cd android && ./gradlew assembleRelease",
     "test": "jest",
     "lint": "eslint ."
   },
