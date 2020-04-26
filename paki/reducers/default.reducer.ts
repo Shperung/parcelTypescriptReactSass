@@ -1,3 +1,7 @@
-import { combineReducers } from "redux";
+import {combineReducers} from 'redux';
 
-export default combineReducers({});
+import dataReducer from './data.reducer';
+
+export default combineReducers({
+  data: dataReducer,
+});
