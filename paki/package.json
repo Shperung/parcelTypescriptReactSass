@@ -3,16 +3,31 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url ./  --out-dir prod",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
     "packager": "react-native start --reset-cache",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "16.11.0",
-    "react-native": "0.62.2"
+    "@types/react-redux": "^7.1.7",
+    "@types/react-router-dom": "^5.1.4",
+    "js-cookie": "^2.2.1",
+    "react": "^16.13.1",
+    "react-datepicker": "^2.14.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-native": "0.62.2",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-select": "^3.1.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -20,16 +35,28 @@
     "@react-native-community/eslint-config": "^0.0.5",
     "@types/jest": "^25.2.1",
     "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
     "@types/react-native": "^0.62.4",
     "@types/react-test-renderer": "^16.9.2",
     "babel-jest": "^24.9.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.58.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svg-sprite": "^1.4.1",
+    "postcss-modules": "^2.0.0",
     "react-test-renderer": "16.11.0",
+    "sass": "^1.26.5",
     "typescript": "^3.8.3"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "svgSpriteOptions": {
+    "include": [
+      "web/components/icons/assets/*"
+    ]
   }
 }
