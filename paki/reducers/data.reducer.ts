@@ -1,19 +1,18 @@
-const init = {};
-const reducer = (state = init, action) => {
+const init: object[] = [];
+const reducer = (state = init, action: {type: string; payload: object[]}) => {
   const {type, payload} = action;
+
+  console.log('payload', payload);
 
   switch (type) {
     case 'GET_DATA':
-      return {
-        ...state,
-        ...payload,
-      };
+      return state.concat(payload);
+
     case 'GET_DATA_ERROR':
-      return {
-        ...init,
-      };
+      return init;
+
     default:
-      return state;
+      return init;
   }
 };
 

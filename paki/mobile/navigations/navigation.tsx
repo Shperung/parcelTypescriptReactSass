@@ -2,12 +2,15 @@ import * as React from 'react';
 import {SafeAreaView, View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 
 const Stack = createStackNavigator();
 
 // actions
 import {getData} from '../../actions/data.action';
+
+// selectors
+import {dataSelector} from '../../selectors/data.selector';
 
 const MainScreen = () => {
   const dispatch = useDispatch();
@@ -15,9 +18,18 @@ const MainScreen = () => {
     dispatch(getData());
   }, []);
 
+  const data = useSelector(dataSelector);
+
   return (
     <SafeAreaView>
       <Text>MainScreen</Text>
+      {data.length ? (
+        <View>
+          {data.map(dataItem => (
+            <Text key={dataItem.unique}>{dataItem.name}</Text>
+          ))}
+        </View>
+      ) : null}
     </SafeAreaView>
   );
 };
