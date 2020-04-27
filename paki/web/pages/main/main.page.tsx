@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Link} from 'react-router-dom';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch, useSelector, connect} from 'react-redux';
 
 // actions
 import {getData} from '../../../actions/data.action';
@@ -17,12 +17,13 @@ interface Data {
   name: string;
 }
 
-const MainPage = () => {
+const MainPage = props => {
+  const {data} = props;
   const dispatch = useDispatch();
-  const data = useSelector(dataSelector);
+  // const data = useSelector(dataSelector);
 
   React.useEffect(() => {
-    dispatch(getData());
+    props.getData();
   }, []);
 
   return (
@@ -39,4 +40,17 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+const mapStateToProps = state => {
+  return {
+    data: dataSelector(state),
+  };
+};
+
+const mapDispatchToProps = {
+  getData,
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(MainPage);
