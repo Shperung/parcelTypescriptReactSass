@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 const port = process.env.PORT || 3012;
 
-app.use(express.static(path.resolve(__dirname, 'prod')));
+app.use(express.static(path.resolve(__dirname, 'dist')));
 
 const data = [
   {

@@ -1,1 +1,0 @@
-{"version":3,"sources":["app/app.scss"],"names":[],"mappings":"AACE;EACE,SAAA","file":"web.f69400ca.css","sourceRoot":"../web","sourcesContent":[":global {\n  .button {\n    margin: 0;\n  }\n}\n"]}
