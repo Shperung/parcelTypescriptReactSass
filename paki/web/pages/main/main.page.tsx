@@ -28,7 +28,7 @@ const MainPage = props => {
 
   return (
     <section>
-      <h1>MainPage 1</h1>
+      <h1>MainPage 11</h1>
       <Link to="/admin">admin2</Link>
       <ul>
         {data.length &&
