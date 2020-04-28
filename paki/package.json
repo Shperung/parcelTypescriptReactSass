@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "parcel web/index.html --open",
-    "build": "parcel build web/index.html --public-url ./  --out-dir prod",
+    "build": "parcel build web/index.html --public-url ./  --out-dir dist",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "packager": "react-native start --reset-cache",
