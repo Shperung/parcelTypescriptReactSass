@@ -22,6 +22,6 @@
     "metro.config.js",
     "jest.config.js"
   ],
-  "include": ["./**/**/*.tsx", "**.ts", "frontend-core/store.ts"],
+  "include": ["./**/**/*.tsx", "**.ts", "frontend-core/store.ts", "index.js"],
   "files": ["custom.d.ts"]
 }
