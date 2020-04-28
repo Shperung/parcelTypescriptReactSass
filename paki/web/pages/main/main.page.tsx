@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 import {useDispatch, useSelector, connect} from 'react-redux';
 
 // actions
-import {getData} from '../../../actions/data.action';
+import {getData} from '../../../frontend-core/actions/data.action';
 
 // selectors
-import {dataSelector} from '../../../selectors/data.selector';
+import {dataSelector} from '../../../frontend-core/selectors/data.selector';
 
 // components
 import Button from '../../components/button/button';
@@ -28,7 +28,7 @@ const MainPage = props => {
 
   return (
     <section>
-      <h1>MainPage 11</h1>
+      <h1>MainPage 111</h1>
       <Link to="/admin">admin2</Link>
       <ul>
         {data.length &&

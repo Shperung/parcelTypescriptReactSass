@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import {createMemoryHistory} from 'history';
 
 const history = createMemoryHistory('/');
-import create from '../../../../redux/store.test';
+import create from '../../../../frontend-core/redux/store.test';
 
 import MainPage from '../main.page';
 

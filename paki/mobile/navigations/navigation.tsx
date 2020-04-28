@@ -7,10 +7,10 @@ import {useDispatch, useSelector} from 'react-redux';
 const Stack = createStackNavigator();
 
 // actions
-import {getData} from '../../actions/data.action';
+import {getData} from '../../frontend-core/actions/data.action';
 
 // selectors
-import {dataSelector} from '../../selectors/data.selector';
+import {dataSelector} from '../../frontend-core/selectors/data.selector';
 
 const MainScreen = () => {
   const dispatch = useDispatch();
